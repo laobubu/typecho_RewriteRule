@@ -1,60 +1,60 @@
 # RewriteRule for Typecho
 
-Ò»¸öÄÜÈÃÄãµÄ Typecho ÔÚ 404 ÏÔÊ¾Ö®Ç°ÖØ¶¨Ïòµ½ÆäËûµØ·½µÄ²å¼þ¡£
+ä¸€ä¸ªèƒ½è®©ä½ çš„ Typecho åœ¨ 404 æ˜¾ç¤ºä¹‹å‰é‡å®šå‘åˆ°å…¶ä»–åœ°æ–¹çš„æ’ä»¶ã€‚
 
 Blog: http://note.laobubu.net/archives/typecho-rewriterule
 
-## °²×°
+## å®‰è£…
 
-½«¶«Î÷£¨Ò»¸ö `RewriteRule` ÎÄ¼þ¼Ð£©¶ªµ½ `usr/plugins` ÏÂ¼´¿É¡£
-
-
-## ÅäÖÃ
-
-·ÃÎÊºóÌ¨ ? ²å¼þ¹ÜÀí£¬ÆôÓÃ RewriteRule ºó·½¿ÉÉèÖÃ¡£
-
-ÔÚÊäÈë¿òÄÚÊäÈëÌø×ªµÄ¹æÔò£¬Ò»ÐÐÒ»¸ö¡£Ã¿Ò»ÐÐ¸ñÊ½Èç
-
-    ÓÃÀ´Æ¥ÅäµÄPattern      ÐÂµØÖ·[       ¿ÉÑ¡µÄflags]
-
-ÀýÈç `^\/(\d+)\/?$ /archives/$1 T` »á°ÑÖîÈç `/27` »òÕß `/27/` µÄµØÖ·Ìø×ªµ½ `/archivers/27` ÉÏ£¨¶øÇÒÒòÎªÕâÀïÓÐ T Õâ¸öflag£¬ËùÒÔ²ÉÓÃµÄÊÇ302ÁÙÊ±ÖØ¶¨Ïò£©
+å°†ä¸œè¥¿ä¸¢åˆ° `usr/plugins/RewriteRule` ä¸‹å³å¯ï¼Œæ–‡ä»¶å¤¹è‡ªå»ºã€‚
 
 
+## é…ç½®
+
+è®¿é—®åŽå°-æ’ä»¶ç®¡ç†ï¼Œå¯ç”¨ RewriteRule åŽæ–¹å¯è®¾ç½®ã€‚
+
+åœ¨è¾“å…¥æ¡†å†…è¾“å…¥è·³è½¬çš„è§„åˆ™ï¼Œä¸€è¡Œä¸€ä¸ªã€‚æ¯ä¸€è¡Œæ ¼å¼å¦‚
+
+    ç”¨æ¥åŒ¹é…çš„Pattern      æ–°åœ°å€[       å¯é€‰çš„flags]
+
+ä¾‹å¦‚ `^\/(\d+)\/?$ /archives/$1 T` ä¼šæŠŠè¯¸å¦‚ `/27` æˆ–è€… `/27/` çš„åœ°å€è·³è½¬åˆ° `/archivers/27` ä¸Šï¼ˆè€Œä¸”å› ä¸ºè¿™é‡Œæœ‰ T è¿™ä¸ªflagï¼Œæ‰€ä»¥é‡‡ç”¨çš„æ˜¯302ä¸´æ—¶é‡å®šå‘ï¼‰
 
 
-## Ò»Ð©ÓÐÓÃµÄÐÅÏ¢
-### ¿ÉÓÃµÄ flags
-flags µÄ×ÖÄ¸´úºÅ²»·Ö´óÐ¡Ð´£¬²»ÐèÒª¼ä¸ô·û¡£
 
-| flag | ¹¦ÄÜ | ×¢   |
+
+## ä¸€äº›æœ‰ç”¨çš„ä¿¡æ¯
+### å¯ç”¨çš„ flags
+flags çš„å­—æ¯ä»£å·ä¸åˆ†å¤§å°å†™ï¼Œä¸éœ€è¦é—´éš”ç¬¦ã€‚
+
+| flag | åŠŸèƒ½ | æ³¨   |
 | ---: | :--- | :--- |
-|   T | ÕâÊÇÒ»¸ö302ÁÙÊ±ÖØ¶¨Ïò¡£|ÈôÎÞ´Ëflag£¬ÔòÄ¬ÈÏ301 |
-|   I | ÎªÕýÔò±í´ïÊ½´ò¿ªiÑ¡Ïî£¨¼´²»·Ö´óÐ¡Ð´£© | ¡­ |
-|   C | °´ÕÕÌõ¼þ²éÕÒÎÄÕÂ¡£ | Õâ¸öÓÐµã¸´ÔÓ£¬×¢Òâ¿´ÏÂÃæµÄ [Ó¦ÓÃ¾ÙÀý1 Ö® ·ÖÎöÄÇ¾ä¹æÔò](#·ÖÎöÄÇ¾ä¹æÔò)  |
+|   T | è¿™æ˜¯ä¸€ä¸ª302ä¸´æ—¶é‡å®šå‘ã€‚|è‹¥æ— æ­¤flagï¼Œåˆ™é»˜è®¤301 |
+|   I | ä¸ºæ­£åˆ™è¡¨è¾¾å¼æ‰“å¼€ié€‰é¡¹ï¼ˆå³ä¸åˆ†å¤§å°å†™ï¼‰ | â€¦ |
+|   C | æŒ‰ç…§æ¡ä»¶æŸ¥æ‰¾æ–‡ç« ã€‚ | è¿™ä¸ªæœ‰ç‚¹å¤æ‚ï¼Œæ³¨æ„çœ‹ä¸‹é¢çš„ [åº”ç”¨ä¸¾ä¾‹1 ä¹‹ åˆ†æžé‚£å¥è§„åˆ™](#åˆ†æžé‚£å¥è§„åˆ™)  |
 
-##Ó¦ÓÃ¾ÙÀý
+##åº”ç”¨ä¸¾ä¾‹
 
-###½â¾öÓÀ¾ÃÁ´½ÓµÄ»ìÂÒÇé¿ö
+###è®©ä¸åŒçš„æ°¸ä¹…é“¾æŽ¥å…±å­˜
 
-####Ò»¸ö¹ÊÊÂ
+####ä¸€ä¸ªæ•…äº‹
 
-John ÓÃ Typecho ´î½¨ÁËÒ»¸ö Blog£¬Ð´ÁËÒ»Ð©ÎÄÕÂ£¬µ«ÊÇÓÉÓÚÒ»Ö±Ã»ÓÐÉèÖÃÓÀ¾ÃÁ´½Ó£¬Òò´ËËûµÄÎÄÕÂµØÖ·Ò»Ö±ÊÇ `/archives/123/` ÕâÑùµÄ¡£
+Yang ç”¨ Typecho æ­å»ºäº†ä¸€ä¸ª Blogï¼Œå†™äº†ä¸€äº›æ–‡ç« ï¼Œä½†æ˜¯ç”±äºŽä¸€ç›´æ²¡æœ‰è®¾ç½®æ°¸ä¹…é“¾æŽ¥ï¼Œå› æ­¤ä»–çš„æ–‡ç« åœ°å€ä¸€ç›´æ˜¯ `/archives/123/` è¿™æ ·çš„ã€‚
 
-ÓÐÒ»Ìì Yang ÎªÁËÌá¸ßÍøÖ·Ò×¶ÁÐÔ£¬Ëû¾ö¶¨½«ÓÀ¾ÃÁ´½Ó¸Ä±äÎª `/archives/a-romantic-story/` ÕâÑùµÄ¸ñÊ½£¬µ«ÊÇ¿àÓÚ¹ýÈ¥µÄÁ´½Ó»áÊ§Ð§£¬Ò»Ö±¾À½áÔõÃ´Ê¹µÃ¾ÉµØÖ·ÄÜÌøµ½ÐÂµØÖ·ÉÏ¡£
+æœ‰ä¸€å¤© Yang ä¸ºäº†æé«˜ç½‘å€æ˜“è¯»æ€§ï¼Œä»–å†³å®šå°†æ°¸ä¹…é“¾æŽ¥æ”¹å˜ä¸º `/archives/a-romantic-story/` è¿™æ ·çš„æ ¼å¼ï¼Œä½†æ˜¯è‹¦äºŽè¿‡åŽ»çš„é“¾æŽ¥ä¼šå¤±æ•ˆï¼Œä¸€ç›´çº ç»“æ€Žä¹ˆä½¿å¾—æ—§åœ°å€èƒ½è·³åˆ°æ–°åœ°å€ä¸Šã€‚
 
-ºóÀ´£¬Ëû°²×°ÁË RewriteRule Õâ¸ö²å¼þ£¬²¢Ìí¼ÓÁËÈçÏÂÒ»¾äÌø×ª¹æÔò£º
+åŽæ¥ï¼Œä»–å®‰è£…äº† RewriteRule è¿™ä¸ªæ’ä»¶ï¼Œå¹¶æ·»åŠ äº†å¦‚ä¸‹ä¸€å¥è·³è½¬è§„åˆ™ï¼š
     
     ^\/archives\/(?P<cid>\d+)\/$     /archives/$slug/    C
 
-ÓÚÊÇµ±·Ã¿Í·ÃÎÊ `/archives/123/` ÕâÑùµÄµØÖ·Ê±£¬ RewriteRule ±ã»á²éÕÒ¶ÔÓ¦ÎÄÕÂµÄ slug ²¢Òýµ¼·Ã¿Íµ½ÖîÈç `/archives/a-romantic-story/` ÕâÑùµÄµØÖ·ÉÏ¡£
+äºŽæ˜¯å½“è®¿å®¢è®¿é—® `/archives/123/` è¿™æ ·çš„åœ°å€æ—¶ï¼Œ RewriteRule ä¾¿ä¼šæŸ¥æ‰¾å¯¹åº”æ–‡ç« çš„ slug å¹¶å¼•å¯¼è®¿å®¢åˆ°è¯¸å¦‚ `/archives/a-romantic-story/` è¿™æ ·çš„åœ°å€ä¸Šã€‚
 
-####·ÖÎöÄÇ¾ä¹æÔò
-1. Ê×ÏÈÕýÔò±í´ïÊ½ `^\/archives\/(?P<cid>\d+)\/` »áÆ¥ÅäÏÈÇ°Ìáµ½µÄÄÇÖÖµØÖ·£¬²¢°ÑÆäÖÐµÄÊý×Ö´æÎª `$cid` ±äÁ¿¡£
-2. ÓÉÓÚÄ©Î²¼ÓÉÏÁËflag `C`£¬¶øÇÒ´æÔÚ±äÁ¿`$cid`£¬Òò´Ë²å¼þ»áËÑË÷Êý¾Ý¿â²éÕÒ¶ÔÓ¦ÎÄÕÂ¡£
-    1. Èç¹ûÕÒµ½ÁË£¬ÔòÀ©Õ¹»á²¹Æë `$cid, $slug, $category` Èý¸ö±äÁ¿£¬¹æÔòÖ¸¶¨µÄÐÂµØÖ· `/archives/$slug/`ÀïÃæµÄ±äÁ¿Ãû×ÔÈ»»á±»Ìæ»»¡£
-    2. Èç¹ûÃ»ÓÐ²éÕÒµ½£¬ÔòÕâ¾ä¹æÔòÎÞÐ§¡£ÒªÊÇºóÐøµÄ¹æÔò»¹ÊÇÎÞÐ§£¬ÔòÏÔÊ¾ 404¡£
+####åˆ†æžé‚£å¥è§„åˆ™
+1. é¦–å…ˆæ­£åˆ™è¡¨è¾¾å¼ `^\/archives\/(?P<cid>\d+)\/` ä¼šåŒ¹é…å…ˆå‰æåˆ°çš„é‚£ç§åœ°å€ï¼Œå¹¶æŠŠå…¶ä¸­çš„æ•°å­—å­˜ä¸º `$cid` å˜é‡ã€‚
+2. ç”±äºŽæœ«å°¾åŠ ä¸Šäº†flag `C`ï¼Œè€Œä¸”å­˜åœ¨å˜é‡`$cid`ï¼Œå› æ­¤æ’ä»¶ä¼šæœç´¢æ•°æ®åº“æŸ¥æ‰¾å¯¹åº”æ–‡ç« ã€‚
+    1. å¦‚æžœæ‰¾åˆ°äº†ï¼Œåˆ™æ‰©å±•ä¼šè¡¥é½ `$cid, $slug, $category` ä¸‰ä¸ªå˜é‡ï¼Œè§„åˆ™æŒ‡å®šçš„æ–°åœ°å€ `/archives/$slug/`é‡Œé¢çš„å˜é‡åè‡ªç„¶ä¼šè¢«æ›¿æ¢ã€‚
+    2. å¦‚æžœæ²¡æœ‰æŸ¥æ‰¾åˆ°ï¼Œåˆ™è¿™å¥è§„åˆ™æ— æ•ˆã€‚è¦æ˜¯åŽç»­çš„è§„åˆ™è¿˜æ˜¯æ— æ•ˆï¼Œåˆ™æ˜¾ç¤º 404ã€‚
     
-####¹ØÓÚ C Õâ¸öflag
-Õâ¸ö flag »á²¹È« `$cid, $slug, $category` Èý¸ö±äÁ¿£¬Ö»Òª Pattern ÀïÃæ¸ãµ½ÁËÖÁÉÙÒ»¸öÉÏÊö±äÁ¿¾ÍÄÜ¹¤×÷¡£
+####å…³äºŽ C è¿™ä¸ªflag
+è¿™ä¸ª flag ä¼šè¡¥å…¨ `$cid, $slug, $category` ä¸‰ä¸ªå˜é‡ï¼Œåªè¦ Pattern é‡Œé¢æžåˆ°äº†è‡³å°‘ä¸€ä¸ªä¸Šè¿°å˜é‡å°±èƒ½å·¥ä½œã€‚
 
-ÒªÈÃÕýÔò¸ø²¶»ñ×éÃüÃû£¬Ð´·¨ÓÐµãÄÑ¿´£¬¾ÍÏñ `(?P<Ãû×Ö>ÕýÔò±í´ïÊ½)` ÕâÖÖ¡£
+è¦è®©æ­£åˆ™ç»™æ•èŽ·ç»„å‘½åï¼Œå†™æ³•æœ‰ç‚¹éš¾çœ‹ï¼Œå°±åƒ `(?P<åå­—>æ­£åˆ™è¡¨è¾¾å¼)` è¿™ç§ã€‚
